@@ -9,7 +9,7 @@ const Footer = () => {
                     <div className="col-span-1 md:col-span-1">
                         <div className="flex items-center gap-2 mb-4">
                             <PenTool className="h-8 w-8 text-indigo-500" />
-                            <span className="font-bold text-xl">EssayFlow</span>
+                            <span className="font-bold text-xl">GoEasyFlow</span>
                         </div>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             Empowering students to write better essays faster with the power of artificial intelligence.
@@ -49,7 +49,7 @@ const Footer = () => {
 
                 <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-gray-500 text-sm">
-                        © {new Date().getFullYear()} EssayFlow. All rights reserved.
+                        © {new Date().getFullYear()} GoEasyFlow. All rights reserved.
                     </p>
                     <div className="flex space-x-6">
                         <a href="#" className="text-gray-400 hover:text-white transition-colors">

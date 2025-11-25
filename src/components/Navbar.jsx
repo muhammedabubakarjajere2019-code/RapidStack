@@ -10,7 +10,7 @@ const Navbar = () => {
                 <div className="flex justify-between h-16 items-center">
                     <div className="flex-shrink-0 flex items-center gap-2">
                         <PenTool className="h-8 w-8 text-indigo-600" />
-                        <span className="font-bold text-xl text-gray-900">EssayFlow</span>
+                        <span className="font-bold text-xl text-gray-900">GoEasyFlow</span>
                     </div>
 
                     <div className="hidden md:flex items-center space-x-8">
