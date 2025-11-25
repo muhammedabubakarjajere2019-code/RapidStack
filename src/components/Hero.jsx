@@ -1,8 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+    const navigate = useNavigate();
+
     return (
         <section className="pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-gradient-to-b from-indigo-50/50 to-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -24,7 +27,10 @@ const Hero = () => {
                             The ultimate AI-powered writing assistant for students. Generate ideas, outline structures, and refine your prose in seconds.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-                            <button className="w-full sm:w-auto px-8 py-4 bg-indigo-600 text-white rounded-xl font-bold text-lg hover:bg-indigo-700 transition-all shadow-lg hover:shadow-indigo-200 flex items-center justify-center gap-2">
+                            <button
+                                onClick={() => navigate('/start-writing')}
+                                className="w-full sm:w-auto px-8 py-4 bg-indigo-600 text-white rounded-xl font-bold text-lg hover:bg-indigo-700 transition-all shadow-lg hover:shadow-indigo-200 flex items-center justify-center gap-2"
+                            >
                                 Start Writing for Free
                                 <ArrowRight className="h-5 w-5" />
                             </button>
