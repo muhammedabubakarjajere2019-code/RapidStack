@@ -1,7 +1,8 @@
 // src/services/gemini.js
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GOOGLE_API_KEY);
+const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
+const genAI = new GoogleGenerativeAI(apiKey);
 
 export async function generateText(prompt) {
     const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
